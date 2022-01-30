@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-300">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Layouts for TailwindCSS">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Two column layout for TailwindCSS</title>
+</head>
+
+<body class="h-full">
+  <div class="h-full flex flex-col sm:flex-row">
+    <aside class="sm:w-64 bg-yellow-300">
+      Navigation
+    </aside>
+    <main class="bg-white sm:overflow-y-auto flex-1">
+      <div class="p-5" data-fill="10">
+
+      </div>
+    </main>
+  </div>
+
+  <!-- supporting content below here -->
+  <div
+    class="flex items-center space-x-2 text-xs absolute right-5 bottom-5 text-yellow-800 bg-yellow-300/80 p-2 rounded-full">
+    <a href="https://github.com/caged/tailwind-layouts">
+      <svg class="w-5 text-yellow-600 hover:text-yellow-700" viewBox="0 0 1024 1024" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+          transform="scale(64)" fill="currentColor" />
+      </svg>
+    </a>
+    <span class="text-yellow-500">/</span>
+    <a href="https://tailwindcss.com">
+      <svg class="w-5 text-yellow-600 hover:text-yellow-700" xmlns="http://www.w3.org/2000/svg" fill="none"
+        viewBox="0 0 54 33">
+        <path fill="currentColor" fill-rule="evenodd"
+          d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+          clip-rule="evenodd" />
+      </svg>
+    </a>
+  </div>
+  <script src="content.js"></script>
+</body>
+
+</html>
